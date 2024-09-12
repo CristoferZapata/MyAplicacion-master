@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Login de Acceso
+      Login
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -16,14 +16,17 @@
   <div id="container">
     <ion-card>
       <ion-card-header>
-        <ion-card-subtitle>Login de acceso</ion-card-subtitle>
-        <ion-card-title>Credenciales</ion-card-title>
+        <ion-card-title>TE LLEVO APP</ion-card-title>
+        <ion-card-subtitle>Credenciales</ion-card-subtitle>
       </ion-card-header>
 
       <ion-card-content>
-        <div class="login">
-        </div>
         <ion-list>
+          <ion-item>
+            <ion-avatar>
+              <img alt="Silhouette of a person's head" src="https://ionicframework.com/docs/img/demos/avatar.svg" />
+            </ion-avatar>
+          </ion-item>
           <ion-item>
             <ion-input [(ngModel)]="user.username" label="Usuario" labelPlacement="floating"
               placeholder="Ingrese su usuario"></ion-input>

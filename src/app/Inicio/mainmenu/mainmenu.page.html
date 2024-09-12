@@ -1,13 +1,29 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>Menú</ion-title>
-  </ion-toolbar>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu Content</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">This is the menu content 
+      <ion-button fill="outline" [routerLink]="['/register']">Registrar</ion-button><br>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+  </div>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">mainmenu</ion-title>
-    </ion-toolbar>
-  </ion-header>
+<ion-content id="container">
+  <h1>Bienvenido</h1>
+  <div id="imagen1">
+    <img src="./assets/img/taxi.png" alt="">
+  </div>
 </ion-content>
+
