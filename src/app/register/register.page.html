@@ -1,0 +1,53 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Registrarse
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Registrarse</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<div id="container">
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Registro</ion-card-title>
+    
+  </ion-card-header>
+
+  <ion-card-content>
+    <div class="Registrarse"></div>
+      <ion-list>
+        <ion-item>
+          <ion-input labelPlacement="floating">
+            <div slot="label">Nombre de usuario</div>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input labelPlacement="floating">
+            <div slot="label">Contraseña</div>
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input labelPlacement="floating">
+            <div slot="label">Vuelva a ingresar la contraseña</div>
+          </ion-input>
+        </ion-item>
+        <br>
+        <ion-button fill="outline" [routerLink]="['/mensaje']">Registrar </ion-button><br><br>
+        <ion-button fill="outline" [routerLink]="['/home']">Iniciar session</ion-button>
+        <ion-card-subtitle>Ya tienes una cuenta?</ion-card-subtitle>
+      </ion-list>
+
+  </ion-card-content>
+
+
+</ion-card>
+</div>
+
+</ion-content>

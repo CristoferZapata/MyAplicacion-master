@@ -1,0 +1,61 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Login de Acceso
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Login de Acceso</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>Login de acceso</ion-card-subtitle>
+        <ion-card-title>Credenciales</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <div class="login">
+        </div>
+        <ion-list>
+          <ion-item>
+            <ion-input [(ngModel)]="user.username" label="Usuario" labelPlacement="floating"
+              placeholder="Ingrese su usuario"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input label="Contraseña" [(ngModel)]="user.password" type="password" labelPlacement="floating"
+              placeholder="Ingrese su contraseña">
+            </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-toggle justify="end">Recuerdame</ion-toggle><br /><br />
+          </ion-item>
+          <ion-item>
+            <ion-label id="conexion">{{mensaje}}</ion-label>
+          </ion-item>
+          <ion-button fill="outline" (click)="validar()">Conectar</ion-button><br>
+          <ion-button fill="outline" [routerLink]="['/register']">Registrar</ion-button><br>
+          <ion-button fill="outline" [routerLink]="['/recoverpass']">Recuperar Contraseña</ion-button><br>
+
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
+
+
+
+
+<!-- su mockup piola
+npm install
+IONIC GENERATE Base/header
+IONIC GENERATE Base/footer
+IONIC SERVE
+GLOBAL CSS
+EN THEME crear .scss y en global colocar import  -->
